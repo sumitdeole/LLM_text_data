@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divUH07LE62M17W5LO"></div>
+        <div class="lime top_div" id="top_divC7MM9F6FJ84098Q"></div>
         
         <script>
-        var top_div = d3.select('#top_divUH07LE62M17W5LO').classed('lime top_div', true);
+        var top_div = d3.select('#top_divC7MM9F6FJ84098Q').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["ham", "spam"], [0.49988413403149884, 0.5001158659685035]);
+            var pp = new lime.PredictProba(pp_svg, ["ham", "spam"], [0.0, 1.0]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["ham", "spam"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["is", -7.289565045104054e-32], ["admirer", 4.0231720878085305e-32], ["find", 3.437239566434272e-32], ["with", 3.1814321069020085e-32], ["reveal", 2.619647452201109e-32], ["who", 2.1825001483505242e-32], ["a", -2.1585526655238962e-32], ["09058094599", -1.1673132516838582e-32], ["thinks", 3.417386132063462e-33], ["secret", 2.5146079644302864e-33]], 1, exp_div);
+                exp.show([["09058094599", 0.3342501762181009], ["contact", 0.08288157169056068], ["call", 0.07674641250814451], ["on", 0.06237546065926744], ["special", 0.05735400404879257], ["secret", 0.05610291258074221], ["U", 0.05204336900604955], ["admirer", 0.04743120062938459], ["R", 0.044188971236014785], ["they", 0.035977193877462545]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["is", 28, -7.289565045104054e-32], ["admirer", 16, 4.0231720878085305e-32], ["find", 61, 3.437239566434272e-32], ["with", 54, 3.1814321069020085e-32], ["reveal", 81, 2.619647452201109e-32], ["who", 24, 2.1825001483505242e-32], ["who", 70, 2.1825001483505242e-32], ["who", 88, 2.1825001483505242e-32], ["a", 7, -2.1585526655238962e-32], ["09058094599", 121, -1.1673132516838582e-32], ["thinks", 92, 3.417386132063462e-33], ["secret", 9, 2.5146079644302864e-33]], 1, "U have a secret admirer who is looking 2 make contact with U-find out who they R*reveal who thinks UR so special-call on 09058094599", raw_div, true);
+            exp.show_raw_text([["09058094599", 121, 0.3342501762181009], ["contact", 46, 0.08288157169056068], ["call", 113, 0.07674641250814451], ["on", 118, 0.06237546065926744], ["special", 105, 0.05735400404879257], ["secret", 9, 0.05610291258074221], ["U", 0, 0.05204336900604955], ["U", 59, 0.05204336900604955], ["admirer", 16, 0.04743120062938459], ["R", 79, 0.044188971236014785], ["they", 74, 0.035977193877462545]], 1, "U have a secret admirer who is looking 2 make contact with U-find out who they R*reveal who thinks UR so special-call on 09058094599", raw_div, true);
             
         </script>
         </body></html>

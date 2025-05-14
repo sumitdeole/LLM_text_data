@@ -36,8 +36,8 @@ It includes:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/sumitdeole/LLM_text_data.git
+   cd LLM_text_data
    ```
 
 2. Create environment and install dependencies:
@@ -90,10 +90,10 @@ MIT License
 ---
 
 ## 🙋‍♂️ Author
-**Your Name** – [your.email@example.com](mailto:your.email@example.com)  
-[GitHub](https://github.com/your-username)
+**Your Name** – [sumitdeole@gmail.com](mailto:sumitdeole@gmail.com)  
+[GitHub](https://github.com/sumitdeole)
 
 ---
 
 ## ⭐ Star this repo
-If you find this project helpful, feel free to give it a ⭐ on [GitHub](https://github.com/your-username/your-repo-name)!
+If you find this project helpful, feel free to give it a ⭐ on [GitHub](https://github.com/sumitdeole/LLM_text_data)!
