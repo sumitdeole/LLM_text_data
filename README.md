@@ -1,30 +1,99 @@
-# SMS Spam Detection with Fine-Tuned Llama 2
+# 📊 SMS Fraud Detection using LLM Embeddings
 
-## Project Overview
-This project implements an end-to-end SMS spam detection system using Llama 2 through Ollama, featuring:
-- **Few-shot learning** for spam classification
-- **Automated analysis** using LLM-generated insights
-- **Professional report generation** with embedded visualizations
+## 🧠 Project Overview
+This project implements a complete end-to-end pipeline for detecting SMS spam using LLM-based embeddings (Mistral), interpretable machine learning, and risk-aware reporting.
 
-## Key Features
-- 🚀 **Llama 2 Integration**: Local model execution via Ollama (no API keys required)
-- 📊 **Advanced Analytics**: Performance metrics with confusion matrix analysis
-- 🤖 **AI-Powered Reporting**: Automated report generation using Llama 2
-- 📈 **Visualization Pipeline**: Automatic plot generation for results interpretation
+It includes:
+- Exploratory Data Analysis (EDA)
+- Embedding generation using `ollama` Mistral model
+- Random Forest classifier with performance evaluation
+- LIME explanations for interpretability
+- Executive-level HTML/PDF reporting using LLM-generated narrative
 
-## Dataset
-The [SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) from UCI contains 5,574 labeled SMS messages (ham/spam).
+---
 
-## Implementation Highlights
+## 🗂️ Repository Structure
 
-### Notebook 2: Llama 2 Classification
-```python
-# Few-shot learning implementation
-response = ollama.generate(
-    model='llama2',
-    prompt="""Classify as spam/ham: "Win a free iPhone!" 
-    Examples: 
-    - "Free prize" → spam 
-    - "Meeting at 3pm" → ham""",
-    options={'temperature': 0}
-)
+```
+├── data/
+│   ├── spam.csv                 # Raw dataset (Kaggle UCI SMS Spam)
+│   ├── model_metrics.csv        # Saved model evaluation metrics
+├── plots/
+│   ├── *.png                    # Visuals from EDA, LIME, Confusion Matrix
+├── reports/
+│   ├── fraud_detection_report.html
+│   ├── fraud_detection_report.pdf
+├── notebooks/
+│   ├── 1_EDA_and_Text_Features.ipynb
+│   ├── 2_Mistral_Embeddings_Classifier.ipynb
+│   ├── 3_Fraud_Detection_Report_Enhanced.ipynb
+├── README.md                   # Project documentation
+```
+
+---
+
+## 📥 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+
+2. Create environment and install dependencies:
+   ```bash
+   conda create -n sms-fraud python=3.10 -y
+   conda activate sms-fraud
+   pip install -r requirements.txt
+   ```
+
+3. Install additional system dependencies:
+   - **WeasyPrint** requires [GTK3 runtime for Windows](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases)
+   - Add `C:\Program Files\GTK3-Runtime Win64\bin` to your system PATH
+
+4. Start Jupyter in VS Code or run:
+   ```bash
+   jupyter notebook
+   ```
+
+---
+
+## ⚙️ Notebooks
+
+### 1. EDA + Feature Engineering
+- Loads and visualizes data
+- Generates word clouds and top spam unigrams
+
+### 2. Model Training with Mistral
+- Generates 4096-D embeddings using `ollama`'s Mistral
+- Trains a balanced Random Forest
+- Saves metrics and plots
+
+### 3. Executive Reporting
+- Feeds metrics and text features to LLM for narrative
+- Renders HTML/PDF executive report with visuals
+
+---
+
+## 📈 Example Outputs
+
+- Confusion Matrix
+  ![Confusion Matrix](plots/confusion_matrix.png)
+- LIME Explanation
+  ![LIME](plots/lime_visualization.png)
+
+---
+
+## 📄 License
+MIT License
+
+---
+
+## 🙋‍♂️ Author
+**Your Name** – [your.email@example.com](mailto:your.email@example.com)  
+[GitHub](https://github.com/your-username)
+
+---
+
+## ⭐ Star this repo
+If you find this project helpful, feel free to give it a ⭐ on [GitHub](https://github.com/your-username/your-repo-name)!
