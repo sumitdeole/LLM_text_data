@@ -84,11 +84,5 @@ MIT License
 
 ---
 
-## 🙋‍♂️ Author
-**Your Name** – [your.email@example.com](mailto:your.email@example.com)  
-[GitHub](https://github.com/your-username)
-
----
-
 ## ⭐ Star this repo
-If you find this project helpful, feel free to give it a ⭐ on [GitHub](https://github.com/your-username/your-repo-name)!
+If you find this project helpful, feel free to give it a ⭐ on [GitHub](https://github.com/sumitdeole/LLM_text_data)!
