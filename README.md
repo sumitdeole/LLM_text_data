@@ -1,7 +1,7 @@
-# 📊 SMS Fraud Detection using LLM Embeddings
+# 📊 SMS Fraud Detection and Reporting using LLM 
 
 ## 🧠 Project Overview
-This project implements a complete end-to-end pipeline for detecting SMS spam using LLM-based embeddings (Mistral), interpretable machine learning, and risk-aware reporting.
+This project implements an end-to-end pipeline for detecting SMS spam using LLM-based embeddings (Mistral), interpretable machine learning, and risk-aware reporting.
 
 It includes:
 - Exploratory Data Analysis (EDA)
@@ -24,10 +24,10 @@ It includes:
 │   ├── fraud_detection_report.html
 │   ├── fraud_detection_report.pdf
 ├── notebooks/
-│   ├── 1_EDA_and_Text_Features.ipynb
-│   ├── 2_Mistral_Embeddings_Classifier.ipynb
-│   ├── 3_Fraud_Detection_Report_Enhanced.ipynb
-├── README.md                   # Project documentation
+│   ├── 01_EDA.ipynb
+│   ├── 02_llm_finetuning_prediction.ipynb
+│   ├── 03_llm_executive_report.ipynb
+├── README.md                   
 ```
 
 ---
@@ -50,11 +50,6 @@ It includes:
 3. Install additional system dependencies:
    - **WeasyPrint** requires [GTK3 runtime for Windows](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases)
    - Add `C:\Program Files\GTK3-Runtime Win64\bin` to your system PATH
-
-4. Start Jupyter in VS Code or run:
-   ```bash
-   jupyter notebook
-   ```
 
 ---
 
@@ -90,10 +85,10 @@ MIT License
 ---
 
 ## 🙋‍♂️ Author
-**Your Name** – [sumitdeole@gmail.com](mailto:sumitdeole@gmail.com)  
-[GitHub](https://github.com/sumitdeole)
+**Your Name** – [your.email@example.com](mailto:your.email@example.com)  
+[GitHub](https://github.com/your-username)
 
 ---
 
 ## ⭐ Star this repo
-If you find this project helpful, feel free to give it a ⭐ on [GitHub](https://github.com/sumitdeole/LLM_text_data)!
+If you find this project helpful, feel free to give it a ⭐ on [GitHub](https://github.com/your-username/your-repo-name)!
